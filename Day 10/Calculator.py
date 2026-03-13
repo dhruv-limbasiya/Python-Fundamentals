@@ -49,7 +49,10 @@ while True:
     operation = input("Pick an operation: ")
     num2 = int(input("What's the next number: "))
 
-    ans = operations[operation](num1, num2)
+    if operation in operations:
+        ans = operations[operation](num1, num2)
+    else:
+        print("Invalid operator")
 
     print(f"{num1} {operation} {num2} = {ans}")
 
