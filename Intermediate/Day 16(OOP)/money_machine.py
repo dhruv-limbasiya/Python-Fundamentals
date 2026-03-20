@@ -16,7 +16,7 @@ class MoneyMachine:
         # Showshow much money the mchine has earned
         print(f"Money: {self.CURRENCY}{self.profit}")
 
-    def proccess_coins(self):
+    def proccess_money(self):
         # ask user to insert money and add them up
         print("Please insert Money.")
         for money in self.MONEY_VALUES:
@@ -25,7 +25,7 @@ class MoneyMachine:
 
     def make_payment(self, cost):
         # check if user paid enough
-        self.proccess_coins()
+        self.proccess_money()
         if self.money_received >= cost:
             change = round(self.money_received - cost, 2)
             print(f"Here is {self.CURRENCY}{change} in change.")
