@@ -19,7 +19,7 @@ class Menu:
         ]
 
     def get_items(self):
-        # returns ll drink name like: "latte,...."
+        # returns all drink name like: "latte,...."
         options = ""
         for item in self.menu:
             options += f"{item.name}/"
