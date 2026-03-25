@@ -17,7 +17,7 @@ with open("../Day 20 (email merge project)/Input/Letters/starting_letter.txt") a
     letter_contents = letter_file.read()
     for name in names:
         stripped_name = name.strip()
-        new_letter = letter_contents.replace(PlaceHolder, stripped_name)
+        new_leeter = letter_contents.replace(PlaceHolder, stripped_name)
 
         with open(f"./Output/ReadyToSend/letter_for_{stripped_name}.txt","w") as completed_letter:
-            completed_letter.write(new_letter)
+            completed_letter.write(new_leeter)
