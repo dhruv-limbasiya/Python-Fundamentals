@@ -1,6 +1,3 @@
-# with open("nato_phonetic_alphabet.csv") as file:
-#     print(file.read())
-
 import pandas as pd
 
 data_frame = pd.read_csv("nato_phonetic_alphabet.csv")
